@@ -121,7 +121,7 @@ install_tmux() {  ##################
     fi
 }
 
-# Function to install kitty_custom.conf and update kitty.conf
+# Function to install tmux_custom.conf and update tmux.conf
 install_tmux_custom() {
     local script_custom="$SCRIPT_DIR/.tmux_custom.conf"
     local target_custom="$CONFIG_DIR/.tmux_custom.conf"
@@ -149,7 +149,7 @@ install_tmux_custom() {
             fi
         fi
         
-        # Check if kitty_custom.conf is already included
+        # Check if tmux_custom.conf is already included
         if ! grep -q "source-file ~/.tmux_custom.conf" "$target_custom"; then
             echo "Adding source directive for .tmux_custom.conf to .tmux.conf..."
             echo "source-file ~/.tmux_custom.conf" >> "$target_conf"
