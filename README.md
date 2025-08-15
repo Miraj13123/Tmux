@@ -1,6 +1,8 @@
 # Tmux Dotfiles Installer
 
-This repository provides a Bash script (`installer_tmux_dots.sh`) to automate the installation of Tmux, Tmux Plugin Manager (TPM), and custom Tmux configurations. It supports Debian/Ubuntu (`apt`) and Arch-based (`pacman`) systems and is part of my [dotfiles collection](https://github.com/Miraj13123/dotfiles).
+This repository provides a Bash script (`installer_tmux_dots.sh`) to automate the installation of Tmux, Tmux Plugin Manager (TPM), and custom Tmux configurations. It supports Debian/Ubuntu (`apt`) and Arch-based (`pacman`) systems.
+
+- this is a part of my [dotfiles](https://github.com/Miraj13123/dotfiles) repository. You can use [dotfiles](https://github.com/Miraj13123/dotfiles) repo that will automatically download this repo and a lot of other dotfiles-repo like Neovim, Kitty, Bash etc.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Tmux-Dotfiles-181717?style=flat-square&logo=tmux" alt="Tmux Dotfiles Badge" width="300"/>
