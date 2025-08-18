@@ -71,7 +71,7 @@ recopy(){
 ensure_tmux_conf() {
     
     if [ ! -f "$target_conf" ]; then
-        if prompt_user ".tmux.conf not found in $CONFIG_DIR. Create an empty kitty.conf?"; then
+        if prompt_user ".tmux.conf not found in $CONFIG_DIR. Create an empty Tmux.conf?"; then
             touch "$target_conf"
             echo "Created empty file $target_conf."
         else
@@ -83,10 +83,10 @@ ensure_tmux_conf() {
 }
 
 #                  ################################## ################################## ##################################
-#                  ################################## ========+ MAIN functions +======== ################################## kitty
+#                  ################################## ========+ MAIN functions +======== ################################## Tmux
 #                  ################################## ################################## ##################################
 
-# Function to install Kitty
+# Function to install Tmux
 install_tmux() {  ##################
     echo "Checking if tmux is installed..."
     if command_exists tmux; then
@@ -129,13 +129,13 @@ install_tmux_custom() {
     if prompt_user "Install tmux_custom.conf and source it in tmux.conf?"; then
 
         if [ ! -f "$script_custom" ]; then
-            echo "Error: kitty_custom.conf not found in $SCRIPT_DIR."
+            echo "Error: Tmux_custom.conf not found in $SCRIPT_DIR."
             return 1
         fi
 
         if [ ! -f "$target_custom" ]; then   ##  !!
             cp "$script_custom" "$target_custom"
-            echo "kitty_custom.conf pasted"
+            echo "Tmux_custom.conf pasted"
         else
             echo "custom conf script already installed in $CONFIG_DIR."
             if prompt_user "wanna re-install?";then
