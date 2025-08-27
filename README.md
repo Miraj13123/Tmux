@@ -2,7 +2,7 @@
 
 This repository provides a Bash script (`installer_tmux_dots.sh`) to automate the installation of Tmux, Tmux Plugin Manager (TPM), and custom Tmux configurations. It supports Debian/Ubuntu (`apt`) and Arch-based (`pacman`) systems.
 
-- this is a part of my [dotfiles](https://github.com/Miraj13123/dotfiles) repository. You can use [dotfiles](https://github.com/Miraj13123/dotfiles) repo that will automatically download this repo and a lot of other dotfiles-repo like Neovim, Kitty, Bash etc.
+- this is a part of my [dotfiles](https://github.com/corechunk/dotfiles) repository. You can use [dotfiles](https://github.com/corechunk/dotfiles) repo that will automatically download this repo and a lot of other dotfiles-repo like Neovim, Kitty, Bash etc.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Tmux-Dotfiles-181717?style=flat-square&logo=tmux" alt="Tmux Dotfiles Badge" width="300"/>
@@ -38,7 +38,7 @@ sudo apt install curl git -y
 ### Manual Installation
 Clone the repository, run the script, and clean up:
 ```bash
-git clone https://github.com/Miraj13123/Tmux.git temp101
+git clone https://github.com/corechunk/Tmux.git temp101
 cd temp101
 chmod +x installer_tmux_dots.sh
 ./installer_tmux_dots.sh
@@ -48,7 +48,7 @@ rm -rf temp101
 
 ### One-Liner Installation
 ```bash
-git clone https://github.com/Miraj13123/Tmux.git temp101 && cd temp101 && chmod +x installer_tmux_dots.sh && ./installer_tmux_dots.sh && cd .. && rm -rf temp101
+git clone https://github.com/corechunk/Tmux.git temp101 && cd temp101 && chmod +x installer_tmux_dots.sh && ./installer_tmux_dots.sh && cd .. && rm -rf temp101
 ```
 
 The script will:
@@ -147,5 +147,5 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
-[![Back to Dotfiles](https://img.shields.io/badge/Back_to_Dotfiles-181717?style=flat-square&logo=github)](https://github.com/Miraj13123/dotfiles)
+[![Back to Dotfiles](https://img.shields.io/badge/Back_to_Dotfiles-181717?style=flat-square&logo=github)](https://github.com/corechunk/dotfiles)
 [![Connect on X](https://img.shields.io/badge/Connect_on_X-1DA1F2?style=flat-square&logo=x)](https://x.com/Mahmudul__Miraj)
